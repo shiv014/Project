@@ -1,8 +1,6 @@
-// Create a fucntion getComputerChoice().
-// getComputerChoice() must randomly return rock paper scissor.
-//create a function which will take value from user and the computer choice and say winner.
 
-function computerChoice(){
+
+function computerChoice(){ // this function will generate a random number which will be treated as Computer choice.
     let computerSelection;
     computerSelection=Math.floor(Math.random()*100);
     
@@ -21,7 +19,7 @@ function computerChoice(){
     
 }
 
-function playerChoice(){
+function playerChoice(){  // this function ask the use to choose 1 for Rock 2 for Paper 3 for Scissors
     let playerSelection;
     playerSelection=parseInt(prompt("Enter you choice\n 1 for Rock\n 2 for Paper\n 3 for Scissors"));
     
@@ -42,7 +40,7 @@ function playerChoice(){
     }
 }
 
-function winLose(pChoice,cChoice){
+function winLose(pChoice,cChoice){ // this function takes the computer choice and player choice to compute win or lose.
 let win,lose,tie;
 if(pChoice==33){
     if(cChoice==99){
@@ -97,12 +95,12 @@ else if(pChoice==99){
 }
 }
 
-function playRound(){
+function playRound(){  // this function plays the one round 
     return  winLose(playerChoice(), computerChoice());
 }
 
 
-function game(){
+function game(){ // this function loops the game and prompt the user to play 5 rounds.
     let check=0,player=0,computer=0,tie=0;
     let finalWinner;
     for(let i=0;i<5;i++){
