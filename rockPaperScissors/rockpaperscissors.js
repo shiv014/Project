@@ -1,11 +1,11 @@
 let playerSelection;
 let check=0,player=0,computer=0,tie=0;
 let finalWinner;
-const para=document.querySelector('p')
+const para=document.querySelector('#result')
 
 
-const btn=document.querySelectorAll('button');
-btn.forEach(item => item.addEventListener('click',function(e){
+const image=document.querySelectorAll('img');
+image.forEach(item => item.addEventListener('click',function(e){
     playerSelection=parseInt(this.id);
     game();
 }))
