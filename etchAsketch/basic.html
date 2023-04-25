@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="etch.js" defer></script>
+</head>
+<body>
+
+    <h1>ETCH-A-Sketch</h1>
+<div id="align"> 
+<div id="bar">
+    <input id="my-input" type="range" min="1" max="100" onchange="updateValOnScroll(this.value);">
+    <label>Scroll to set the Grid Size</label>
+    <button>Clear</button>
+    <input id="color" type="color" onchange="setColor(this.value);">
+</div>
+<div>
+    <div id="board">
+    <div id="grid">
+    </div>
+    </div>
+</div>
+</div>   
+</body>
+</html>
