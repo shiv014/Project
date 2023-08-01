@@ -23,8 +23,14 @@ public class juggleLetters {
 		//converting the string to char array
 		
 		char[] stroutarr=strout.toCharArray();
-		int len=stroutarr.length;
-		
+
+		//counting each element repeatation and checking
+		// if count is equal to 0;
+		/*
+		 * logic here is that is that the each char must be equal
+		 * to number of inputed string. If count is not equal
+		 * that means letters can be juggled to form a common string
+		 */
         for(int i=0;i<stroutarr.length;i++) {
         	for(int j=0;j<stroutarr.length;j++) {
         		if(stroutarr[i]==stroutarr[j]) {
