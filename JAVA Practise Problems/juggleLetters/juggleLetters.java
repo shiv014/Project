@@ -4,15 +4,21 @@ import java.util.*;
 public class juggleLetters {
 	public static void main(String args[]) {
 		
+		Scanner sc=new Scanner(System.in);
+		
+		int test=sc.nextInt();
+		
+		while(test>0) {
+		test--;
 		int count=0;
 		// Taking input from User
-		Scanner sc=new Scanner(System.in);
+		
 		int n=sc.nextInt();
 		String[] strin=new String[n];
 		for(int i=0;i<n;i++) {
 			strin[i]=sc.next(); 
 		}
-		sc.close();
+		
 		String strout="";
 		
 		// merging the string to one string
@@ -50,5 +56,7 @@ public class juggleLetters {
         	System.out.println("Yes");
         }
 		
+	 }
+		sc.close();
 	}
 }
